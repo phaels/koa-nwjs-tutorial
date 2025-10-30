@@ -933,14 +933,3 @@ Made with ❤️ and ⚡ Koa.js
 
 </div>
 ```
-
-Diese README.md Datei enthält das vollständig auf Koa.js umgestellte Tutorial mit:
-
-1. **Koa.js-spezifischen Features**: Async/Await, kaskadierende Middleware, Context-Object
-2. **Demo aller Koa.js-Funktionen** auf der index.ejs Seite
-3. **Aktualisierte package.json** mit Koa.js Dependencies
-4. **Vollständig umgeschriebenen server.js** mit Koa.js Middleware und Routing
-5. **Interaktive Demos** für Middleware-Chains und Koa.js Features
-6. **Aktualisierte Dokumentation** und Badges
-
-Die Webseite zeigt jetzt live Demos von Koa.js-Funktionen wie Middleware-Chains, Async/Await Operations und dem Context-Object.
