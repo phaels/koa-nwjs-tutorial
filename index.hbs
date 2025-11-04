@@ -1,0 +1,115 @@
+<div class="container my-5">
+
+  <!-- Hero -->
+  <div class="hero p-5 mb-5 bg-primary text-white rounded-3">
+    <h1 class="display-4"><i class="bi bi-window-desktop"></i> Willkommen!</h1>
+    <p class="lead">Performante Desktop-App mit Koa.js & Handlebars - 100% offline</p>
+  </div>
+
+  <!-- Koa.js Features -->
+  <h2 class="mb-4"><i class="bi bi-lightning"></i> Koa.js Features</h2>
+
+  <div class="row g-4 mb-5">
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-header bg-success text-white">
+          <i class="bi bi-activity"></i> System Status
+        </div>
+        <div class="card-body">
+          <div id="status">
+            <div class="spinner-border text-success"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card h-100">
+        <div class="card-header bg-primary text-white">
+          <i class="bi bi-stars"></i> Framework Features
+        </div>
+        <div class="card-body">
+          <div id="features">
+            <div class="spinner-border text-primary"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Demo -->
+  <div class="card mb-5">
+    <div class="card-header bg-warning">
+      <h5 class="mb-0"><i class="bi bi-play-circle"></i> Koa.js Demo</h5>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <button class="btn btn-primary w-100" onclick="demo.loadStatus()">
+            <i class="bi bi-arrow-clockwise"></i> Status aktualisieren
+          </button>
+        </div>
+        <div class="col-md-4 mb-3">
+          <button class="btn btn-success w-100" onclick="demo.testKoaContext()">
+            <i class="bi bi-gear"></i> Koa Context Test
+          </button>
+        </div>
+        <div class="col-md-4 mb-3">
+          <button class="btn btn-info w-100" onclick="demo.testErrorHandling()">
+            <i class="bi bi-exclamation-triangle"></i> Error Handling
+          </button>
+        </div>
+      </div>
+      <div id="demo-output" class="mt-3"></div>
+    </div>
+  </div>
+
+  <!-- Tech Stack Icons -->
+  <h3 class="mb-4"><i class="bi bi-stack"></i> Unser Tech Stack</h3>
+  <div class="row g-3">
+    {{#each features}}
+    <div class="col-md-3">
+      <div class="card text-center p-3">
+        <i class="bi {{this.icon}} display-3 text-primary"></i>
+        <h5 class="mt-2">{{this.name}}</h5>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+  <!-- Koa Middleware Demo -->
+  <div class="card mt-5">
+    <div class="card-header bg-dark text-white">
+      <h4 class="mb-0"><i class="bi bi-diagram-3"></i> Koa.js Middleware Chain</h4>
+    </div>
+    <div class="card-body">
+      <div class="row text-center">
+        <div class="col-md-2">
+          <i class="bi bi-shield-check display-4 text-success"></i>
+          <h6>Security</h6>
+        </div>
+        <div class="col-md-2">
+          <i class="bi bi-clock display-4 text-primary"></i>
+          <h6>Logger</h6>
+        </div>
+        <div class="col-md-2">
+          <i class="bi bi-folder display-4 text-warning"></i>
+          <h6>Static Files</h6>
+        </div>
+        <div class="col-md-2">
+          <i class="bi bi-router display-4 text-info"></i>
+          <h6>Router</h6>
+        </div>
+        <div class="col-md-2">
+          <i class="bi bi-file-code display-4 text-danger"></i>
+          <h6>Templates</h6>
+        </div>
+        <div class="col-md-2">
+          <i class="bi bi-bug display-4 text-secondary"></i>
+          <h6>Error Handling</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

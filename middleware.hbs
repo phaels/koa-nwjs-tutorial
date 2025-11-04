@@ -1,0 +1,69 @@
+<div class="container my-5">
+
+  <div class="card mb-4">
+    <div class="card-header bg-primary text-white">
+      <h2 class="mb-0"><i class="bi bi-gear"></i> Koa.js Middleware Demo</h2>
+    </div>
+    <div class="card-body">
+      <p class="lead">Erkunde die Leistungsfähigkeit von Koa.js Middleware</p>
+
+      <div class="row g-4 mb-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header bg-success text-white">
+              <i class="bi bi-activity"></i> Context Demo
+            </div>
+            <div class="card-body">
+              <p>Teste Koa's Context Object mit allen Eigenschaften:</p>
+              <button class="btn btn-success w-100" onclick="demo.testKoaContext()">
+                <i class="bi bi-play-circle"></i> Context Test ausführen
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header bg-warning text-white">
+              <i class="bi bi-exclamation-triangle"></i> Error Handling
+            </div>
+            <div class="card-body">
+              <p>Teste Koa's eingebaute Error Handling:</p>
+              <button class="btn btn-warning w-100" onclick="demo.testErrorHandling()">
+                <i class="bi bi-bug"></i> Error Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="middleware-output"></div>
+    </div>
+  </div>
+
+  <!-- Koa Features Grid -->
+  <h3 class="mb-4"><i class="bi bi-lightning"></i> Koa.js Core Features</h3>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="card text-center p-3">
+        <i class="bi bi-aspect-ratio display-3 text-primary"></i>
+        <h5>Async/Await</h5>
+        <small class="text-muted">Keine Callback-Hölle</small>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center p-3">
+        <i class="bi bi-diagram-3 display-3 text-success"></i>
+        <h5>Cascading</h5>
+        <small class="text-muted">Middleware Flow</small>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card text-center p-3">
+        <i class="bi bi-wrench display-3 text-warning"></i>
+        <h5>Context</h5>
+        <small class="text-muted">Erweitertes Object</small>
+      </div>
+    </div>
+  </div>
+
+</div>
