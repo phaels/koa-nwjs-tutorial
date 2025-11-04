@@ -79,7 +79,7 @@ koa-handlebars-app/
     "koa": "^2.15.3",
     "koa-router": "^12.0.1",
     "koa-static": "^5.0.0",
-    "koa-handlebars": "*",
+    "koa-handlebars": "^1.0.1",
     "handlebars": "^4.7.8"
   },
   "keywords": ["koa", "handlebars", "nwjs", "desktop-app", "offline"],

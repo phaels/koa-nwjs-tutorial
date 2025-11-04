@@ -1,0 +1,31 @@
+{
+  "name": "koa-handlebars-app",
+  "version": "1.0.0",
+  "description": "Performante Desktop App mit Koa.js & Handlebars",
+  "main": "http://localhost:8080",
+  "node-main": "server.js",
+  "window": {
+    "title": "Koa + Handlebars App",
+    "width": 1200,
+    "height": 800,
+    "min_width": 800,
+    "min_height": 600,
+    "position": "center",
+    "icon": "public/favicon.ico"
+  },
+  "scripts": {
+    "start": "nw .",
+    "dev": "node server.js",
+    "setup": "node scripts/setup-deps.js"
+  },
+  "dependencies": {
+    "koa": "^2.15.3",
+    "koa-router": "^12.0.1",
+    "koa-static": "^5.0.0",
+    "koa-handlebars": "*",
+    "handlebars": "^4.7.8"
+  },
+  "keywords": ["koa", "handlebars", "nwjs", "desktop-app", "offline"],
+  "author": "Martin Imle",
+  "license": "MIT"
+}
