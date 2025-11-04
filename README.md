@@ -1,5 +1,8 @@
 # 🚀 Koa.js + Handlebars.js NW.js Desktop App - Optimierte Version
 
+<img width="1214" height="1231" alt="Bildschirmfoto_20251105_001202" src="https://github.com/user-attachments/assets/7d3a865a-368f-4777-9622-42d977788660" />
+
+
 <div align="center">
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
